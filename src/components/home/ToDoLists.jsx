@@ -91,7 +91,7 @@ const ToDoList = () => {
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
-              {todos.map((todo) => (
+              {todos?.map((todo) => (
                 <tr key={todo._id}>
                   <td className="whitespace-nowrap px-4 py-2 text-center font-medium text-gray-900 dark:text-white">
                     {todo.title}
