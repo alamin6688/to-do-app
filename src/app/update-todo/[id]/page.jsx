@@ -38,7 +38,7 @@ const UpdateTodo = ({ params }) => {
     try {
       setLoading(true);
       const res = await axios.patch(
-        `https://to-do-app-ecru-xi.vercel.app/api/todos/update-todo`,
+        `https://to-do-app-seven-orpin.vercel.app/api/todos/update-todo`,
         updatedData
       );
       if (res.data.acknowledged) {

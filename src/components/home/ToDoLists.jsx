@@ -38,7 +38,7 @@ const ToDoList = () => {
 
     try {
       setLoading(true);
-      await axios.post("https://to-do-app-ecru-xi.vercel.app/api/todos/post-todo", newToDo);
+      await axios.post("https://to-do-app-seven-orpin.vercel.app/api/todos/post-todo", newToDo);
       toast.success("Added successfully");
       setTodos((prevTodos) => [...prevTodos, newToDo]);
       setVisible(false);
@@ -52,7 +52,7 @@ const ToDoList = () => {
   const handleDelete = async (id) => {
     try {
       setLoading(true);
-      await axios.delete(`https://to-do-app-ecru-xi.vercel.app/api/todos/delete-todo/${id}`);
+      await axios.delete(`https://to-do-app-seven-orpin.vercel.app/api/todos/delete-todo/${id}`);
       toast.success("Deleted successfully");
       setTodos((prevTodos) => prevTodos.filter((todo) => todo._id !== id));
     } catch (error) {
