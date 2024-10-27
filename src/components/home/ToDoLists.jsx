@@ -130,7 +130,7 @@ const ToDoList = () => {
               <span className="absolute bg-emerald-800 w-36 h-36 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all"></span>
               <div className="flex items-center justify-center gap-2">
                 <FaRegCalendarPlus />
-                <span>Add Task</span>
+                <span>Add ToDo</span>
               </div>
             </button>
           </div>
