@@ -38,11 +38,7 @@ const ToDoList = () => {
 
     try {
       setLoading(true);
-<<<<<<< HEAD
       await axios.post("https://to-do-app-zeta-bay.vercel.app/api/todos/post-todo", newToDo);
-=======
-      await axios.post("https://to-do-app-zeta-bay.vercel.app/api/todos/post-todo", newToDo);
->>>>>>> 1c3df9c7b309fa368aeba25e60a9da0d561b6e64
       toast.success("Added successfully");
       setTodos((prevTodos) => [...prevTodos, newToDo]);
       setVisible(false);
@@ -56,11 +52,7 @@ const ToDoList = () => {
   const handleDelete = async (id) => {
     try {
       setLoading(true);
-<<<<<<< HEAD
       await axios.delete(`https://to-do-app-zeta-bay.vercel.app/api/todos/delete-todo/${id}`);
-=======
-      await axios.delete(`https://to-do-app-zeta-bay.vercel.app/api/todos/delete-todo/${id}`);
->>>>>>> 1c3df9c7b309fa368aeba25e60a9da0d561b6e64
       toast.success("Deleted successfully");
       setTodos((prevTodos) => prevTodos.filter((todo) => todo._id !== id));
     } catch (error) {
