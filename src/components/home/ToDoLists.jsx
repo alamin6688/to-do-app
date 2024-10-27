@@ -1,6 +1,7 @@
 "use client";
 import getToDoList from "@/lib/getToDoList";
 import axios from "axios";
+import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import toast from "react-hot-toast";
 import { FaRegCalendarPlus } from "react-icons/fa6";
@@ -102,19 +103,18 @@ const ToDoList = () => {
                     {todo.priority}
                   </td>
                   <td className="whitespace-nowrap px-4 py-2 text-center flex justify-center gap-4">
-                    <a
+                    <Link
                       href={`/update-todo/${todo._id}`}
                       className="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700"
                     >
                       Update
-                    </a>
-                    <a
+                    </Link>
+                    <button
                       onClick={() => handleDelete(todo._id)}
-                      href="#"
                       className="inline-block rounded bg-red-600 px-4 py-2 text-xs font-medium text-white hover:bg-red-700"
                     >
                       Delete
-                    </a>
+                    </button>
                   </td>
                 </tr>
               ))}
