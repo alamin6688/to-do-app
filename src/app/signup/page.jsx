@@ -16,7 +16,7 @@ const SignUp = () => {
       password: e.target.password.value,
     };
 
-    const res = await axios.post("https://to-do-app-zeta-bay.vercel.app/signup/api", newUser);
+    const res = await axios.post("https://to-do-app-ecru-xi.vercel.app/signup/api", newUser);
     if (res.data.insertedId) {
       const swalWithBootstrapButtons = Swal.mixin({
         customClass: {
